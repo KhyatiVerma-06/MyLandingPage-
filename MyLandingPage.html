@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landing Page</title>
+  <style>
+    /* Reset some default browser styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    /* Navbar */
+    header {
+      background: #2c3e50;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://picsum.photos/1200/600") no-repeat center/cover;
+      color: white;
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      background: #e67e22;
+      color: #fff;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* About Section */
+    .about {
+      padding: 3rem 2rem;
+      text-align: center;
+      background: #fff;
+    }
+
+    .about h2 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+
+    .about p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    /* Features Section */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      padding: 3rem 2rem;
+    }
+
+    .feature-box {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .feature-box h3 {
+      margin-bottom: 1rem;
+      color: #2c3e50;
+    }
+
+    /* Footer */
+    footer {
+      background: #2c3e50;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+   
+  <header>
+    <h1>MyLandingPage</h1>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+   
+  <section class="hero" id="hero">
+    <h2>Welcome to My Landing Page</h2>
+    <p>A simple project using HTML & CSS that looks professional.</p>
+    <a href="#about" class="btn">Get Started</a>
+  </section>
+
+ 
+  <section class="about" id="about">
+    <h2>About This Project</h2>
+    <p>
+      This landing page is a beginner-friendly web development project. 
+      It helps you practice HTML structure, CSS styling, layout design, 
+      and responsive elements while encouraging creativity.
+    </p>
+  </section>
+
+   
+  <section class="features" id="features">
+    <div class="feature-box">
+      <h3>🎨 Creative Design</h3>
+      <p>Practice aligning text, images, and sections with CSS.</p>
+    </div>
+    <div class="feature-box">
+      <h3>⚡ Fast Loading</h3>
+      <p>Lightweight code ensures smooth performance.</p>
+    </div>
+    <div class="feature-box">
+      <h3>📱 Responsive</h3>
+      <p>Layout adjusts for desktop, tablet, and mobile.</p>
+    </div>
+  </section>
+
+  
+  <footer id="footer">
+    <p>&copy; 2025 MyLandingPage | Built with ❤ using HTML & CSS</p>
+  </footer>
+</body>
+</html>  
+
+
